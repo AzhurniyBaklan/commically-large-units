@@ -1,6 +1,5 @@
 {
 "type": "mech"
-"localizedName": "magnetar",
 "canBoost": true,
 "canDrown": false,
 "rotateSpeed": 2.5,
