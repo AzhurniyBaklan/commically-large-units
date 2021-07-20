@@ -1,0 +1,68 @@
+{
+"type": "mech"
+"localizedName": "magnetar",
+"canBoost": true,
+"canDrown": false,
+"rotateSpeed": 2.5,
+"faceTarget": true,
+"boostMultiplier": 1.2,
+"speed": 0.5,
+"hitSize": 25,
+"landShake": 6,
+"health": 7000,
+"commandLimit": 10,
+"buildSpeed": 2.75,
+"armor": 15,
+"riseSpeed": 0.05,
+"engineSize": 2.5,
+"abilities": [
+  {
+    "type": "ShieldRegenFieldAbility",
+    "amount": 120,
+    "max": 800,
+    "reload": 720,
+    "range": 180
+  } ],
+"weapons":
+[
+{"name": "implosion-shotgun",
+ "top": false,
+ "y": 0.75,
+ "x": 11,
+ "shootY": 5,
+ "reload": 100,
+ "shots": 6,
+ "shake": 4,
+ "inaccuracy": 40,
+ "spacing": 0,
+ "ejectEffect": none,
+ "recoil": 4,
+ "shootSound": "spark",
+ "bullet": { "type": "LightningBulletType",
+             "lightningColor": 98ffa9,
+             "hitColor": 98ffa9,
+             "damage": 35,
+             "lightningLength": 15,
+             "lightningLengthRand": 8,
+             "shootEffect": "shootHeal",
+             "collidesTeam": true,
+             "healPercent": 13,
+             "lightningType": {
+             "type": "LightningBulletType",
+             "lightColor": 98ffa9,
+             "lightning": 3,
+             "lightningLength": 8,
+             "lightningLengthRand": 8,
+             "lightningCone": 35,
+             "lightningColor": 98ffa9,
+             "lightningDamage": 25} 
+}}],
+"research":{
+"parent": "pulsar",
+"objectives": ["exponential-reconstructor"],
+"requirements": [
+    "plastanium/10000",
+    "titanium/18000",
+    "silicon/22000"]
+}
+}

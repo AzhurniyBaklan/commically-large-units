@@ -1,9 +1,13 @@
+
 //the const
 const polygon = extend(UnitType, "polygon", {
   ammoType: AmmoTypes.powerHigh
 });
 polygon.constructor = () => extend(UnitEntity, {});
-
+const implosion = extend(UnitType, "implosion", {
+  ammoType: AmmoTypes.powerHigh
+});
+implosion.constructor = () => extend(MechUnit, {});
 
 //thingy
 const unitPlans = new Seq(UnitFactory.UnitPlan);
@@ -22,5 +26,11 @@ reconAdd(Blocks.exponentialReconstructor, [
   Seq.with(
     UnitTypes.poly,
     cunit("polygon")
+  )
+]);
+reconAdd(Blocks.exponentialReconstructor, [
+  Seq.with(
+    UnitTypes.pulsar,
+    cunit("implosion")
   )
 ]);
