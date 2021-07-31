@@ -1,13 +1,13 @@
-
 //the const
 const polygon = extend(UnitType, "polygon", {
-  ammoType: AmmoTypes.powerHigh
 });
 polygon.constructor = () => extend(UnitEntity, {});
 const implosion = extend(UnitType, "implosion", {
-  ammoType: AmmoTypes.powerHigh
 });
 implosion.constructor = () => extend(MechUnit, {});
+const gust = extend(UnitType, "gust", {
+});
+gust.constructor = () => extend(UnitEntity, {});
 
 //thingy
 const unitPlans = new Seq(UnitFactory.UnitPlan);
@@ -32,5 +32,11 @@ reconAdd(Blocks.exponentialReconstructor, [
   Seq.with(
     UnitTypes.pulsar,
     cunit("implosion")
+  )
+]);
+reconAdd(Blocks.exponentialReconstructor, [
+  Seq.with(
+    UnitTypes.horizon,
+    cunit("gust")
   )
 ]);
