@@ -29,7 +29,7 @@
  "y": 0.75,
  "x": 11,
  "shootY": 5,
- "reload": 110,
+ "reload": 100,
  "shots": 4,
  "shake": 4,
  "inaccuracy": 40,
@@ -40,7 +40,7 @@
  "bullet": { "type": "LightningBulletType",
              "lightningColor": 98ffa9,
              "hitColor": 98ffa9,
-             "damage": 35,
+             "damage": 45,
              "lightningLength": 15,
              "lightningLengthRand": 8,
              "shootEffect": "shootHeal",
@@ -54,7 +54,7 @@
              "lightningLengthRand": 8,
              "lightningCone": 35,
              "lightningColor": 98ffa9,
-             "lightningDamage": 15} 
+             "lightningDamage": 25} 
 }}],
 "research":{
 "parent": "pulsar",
