@@ -2,6 +2,9 @@
 const polygon = extend(UnitType, "polygon", {
 });
 polygon.constructor = () => extend(UnitEntity, {});
+const illawarra = extend(UnitType, "illawarra", {
+});
+illawarra.constructor = () => extend(LegsUnit, {});
 const implosion = extend(UnitType, "implosion", {
 });
 implosion.constructor = () => extend(MechUnit, {});
@@ -38,5 +41,11 @@ reconAdd(Blocks.exponentialReconstructor, [
   Seq.with(
     UnitTypes.horizon,
     cunit("gust")
+  )
+]);
+reconAdd(Blocks.exponentialReconstructor, [
+  Seq.with(
+    UnitTypes.atrax,
+    cunit("illawarra")
   )
 ]);
