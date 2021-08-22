@@ -29,6 +29,7 @@
 [ {"name": "polygon-missiles",
    "top": false,
    "y": 6,
+   "mirror": true,
    "x": 10,
    "reload": 60,
    "ejectEffect": none,
@@ -42,6 +43,7 @@
    "bullet": { "type": "MissileBulletType",
                "speed": 4,
                "splashDamageRadius": 10,
+               "sprite": "missile-large"
                "damage": 75,
                "homingPower": 0.2,
                "weaveMag": 6,
@@ -79,6 +81,7 @@
                "splashDamageRadius": 10,
                "damage": 75,
                "homingPower": 0.2,
+               "sprite": "missile-large"
                "weaveMag": 6,
                "length": 70,
                "width": 16,
